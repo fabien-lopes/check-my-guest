@@ -1,0 +1,25 @@
+@import "reset";
+@import "global";
+@import "overrides";
+@import "themes";
+@import "transitions";
+
+html {
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+p {
+  margin: .6rem 0;
+}
+
+hr {
+  height: 0.1rem;
+  background-color: var(--border-color-base);
+  border: none;
+}

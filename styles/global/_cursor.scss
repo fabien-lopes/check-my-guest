@@ -1,0 +1,13 @@
+.cursor {
+  &--pointer {
+    cursor: pointer;
+  }
+
+  &--grab {
+    cursor: grab;
+  }
+
+  &--no {
+    cursor: none;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      { "name": "typescript-tslint-plugin" }
+    ],
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@nuxtjs/auth-next",
+      "@types/node",
+      "@types/nuxtjs__auth",
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@nuxtjs/moment",
+      "nuxt-i18n",
+      "@nuxtjs/firebase"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
+}

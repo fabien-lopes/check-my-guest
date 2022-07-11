@@ -1,0 +1,45 @@
+:root {
+  /* COLORS */
+  --color-primary: #F82C60;
+  --color-secondary: #040849;
+  --color-primary-rgb: 70, 82, 193;
+  --color-primary-light-rgb: 228, 230, 247;
+  --color-info: #a3a5cb;
+  --color-success: #1FBFB8;
+  --color-success--rgb: 31, 191, 184;
+  --color-success-light-rgb: 223, 245, 244;
+  --color-warning: #ffb14b;
+  --color-warning-gold: #c48501;
+  --color-danger: #FF4B5E;
+  --color-not-specified: #BF4FA0;
+  --color-complementary: #1082E6;
+  --color-disabled: #b2c6dd;
+  --color-disabled-rgb: 178, 198, 221;
+  --color-white: #FFFFFF;
+  --color-text-base: var(--color-secondary);
+  --color-time-occupation-low: var(--color-success);
+  --color-time-occupation-medium: var(--color-warning);
+  --color-time-occupation-high: var(--color-danger);
+
+  /* UI ELEMENTS COLORS */
+  --menu-background-color: var(--color-secondary);
+  --background-color-base: #F3F6F9;
+  --border-color-base: #E4EAF0;
+
+  /* FONT */
+  --font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-size-extra-extra-large: 60px;
+  --font-size-extra-large: 22px;
+  --font-size-large: 20px;
+  --font-size-medium: 16px;
+  --font-size-base: 16px;
+  --font-size-small: 12px;
+  --font-size-extra-small: 10px;
+
+  /* FULLCALENDAR */
+  --fc-events-opacity: 1;
+  --fc-border-color: var(--border-color-base);
+  --fc-event-bg-color: rgba(var(--color-primary-light-rgb), var(--fc-events-opacity));
+  --fc-event-border-color: transparent;
+  --fc-event-text-color: var(--color-primary);
+}

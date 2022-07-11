@@ -1,0 +1,96 @@
+.separated-cols {
+  & > div {
+    border-right: 0.1rem solid var(--border-color-base);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.separated-blocks {
+  & > * {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.darken-col {
+  background-color: #EBEFF4;
+
+  .el-switch:not(.is-checked) {
+    .el-switch__core {
+      background: #A1B5CC;
+    }
+  }
+}
+
+.small-width-select,
+.extra-small-width-select,
+.small-width-select-number {
+  .el-input__inner {
+    @extend .px-0;
+    @extend .text--center;
+  }
+}
+.small-width-select,
+.small-width-select-number {
+  width: 5.7rem;
+}
+.small-width-select-number {
+  .el-input__inner {
+    padding-right: 1.2rem;
+  }
+}
+.extra-small-width-select {
+  width: 4rem;
+}
+
+.listing-items-container {
+  & > div {
+    @extend .d-flex;
+    @extend .justify-space-between;
+    @extend .align-center;
+    @extend .px-3;
+    min-height: 3.5rem;
+    transition: background-color 0.3s ease;
+    border-bottom: 0.1rem solid var(--border-color-base);
+
+    &:hover {
+      background-color: rgb(241,244,247); // TODO - Refactor : Set a variable color
+    }
+
+    &:first-child {
+      @extend .mt-4;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &--no-border {
+    & > div {
+      border-bottom: none;
+    }
+  }
+
+  &--darken {
+    & > div {
+      &:hover {
+        background-color: var(--color-disabled);
+      }
+    }
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.elevated-content {
+  z-index: 11;
+}

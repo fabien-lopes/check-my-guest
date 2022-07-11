@@ -1,0 +1,155 @@
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--primary {
+    color: var(--color-primary);
+  }
+
+  &--secondary {
+    color: var(--color-secondary);
+  }
+
+  &--complementary {
+    color: var(--color-complementary);
+  }
+
+  &--base {
+    color: var(--color-secondary);
+  }
+
+  &--disabled {
+    color: var(--color-disabled);
+  }
+
+  &--success {
+    color: var(--color-success);
+  }
+
+  &--info {
+    color: var(--color-info);
+  }
+
+  &--warning {
+    color: var(--color-warning);
+  }
+
+  &--warning-gold {
+    color: var(--color-warning-gold);
+  }
+
+  &--danger {
+    color: var(--color-danger);
+  }
+
+  &--required {
+    &:after {
+      @extend .ml-1;
+      content: '*';
+      color: var(--color-danger);
+    }
+  }
+
+  &--hightlighted {
+    @extend .px-1;
+    background-color: rgba(var(--color-primary-rgb), 0.15);
+    color: var(--color-primary);
+    border-radius: 0.2rem;
+  }
+
+  &--line-through {
+    text-decoration: line-through;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+.fs {
+  &--extra-extra-large {
+    font-size: var(--font-size-extra-extra-large) !important;
+  }
+
+  &--extra-large {
+    font-size: var(--font-size-extra-large) !important;
+  }
+
+  &--large {
+    font-size: var(--font-size-large)  !important;
+  }
+
+  &--medium {
+    font-size: var(--font-size-medium)  !important;
+  }
+
+  &--base {
+    font-size: var(--font-size-base)  !important;
+  }
+
+  &--small {
+    font-size: var(--font-size-small)  !important;
+  }
+
+  &--extra-small {
+    font-size: var(--font-size-extra-small)  !important;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.ultra-bold {
+  font-weight: 700;
+}
+
+.word-break {
+  word-break: normal;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.line-through-light {
+  text-decoration: line-through;
+  color: var(--color-info);
+}
+
+.label {
+  @extend .bold;
+  @extend .fs--medium;
+}
+
+.required:after {
+  color: var(--color-danger);
+  content: '*';
+  position: absolute;
+  margin-left: 2px;
+}
